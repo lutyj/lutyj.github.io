@@ -203,10 +203,10 @@ function showFinalResults() {
       probString = 'Вы дали ' + score + ' правильных ответов из ' + questions.length + '.';
 
   if (score <= 7) {
-      probString += '<p>Не расстраивайтесь, просто вы во всех отношениях здоровый человек! ' +
-          'А здоровому гиппокампу не нужен Гиппократ. Гип-гип ура!</p>';
+    probString += '<p>Не расстраивайтесь, просто вы во всех отношениях здоровый человек! ' +
+      'А здоровому гиппокампу не нyжен Гиппократ. Гип-гип ура!</p>';
   } else {
-    probString += '<br>Шанс набрать такое количество очков наугад примерно равен ' +
+    probString += '<br>Шанс набрать такое количество очков наугад равен ' +
       ' 1 к ' + Math.round(1/pValue) + ' (p-value)';
 
     if (score <= 11) {
@@ -214,7 +214,8 @@ function showFinalResults() {
         '<i>врач &mdash; философ; ведь нет большой разницы между мудростью и медициной</i>. ' +
         'Интересно, сколько баллов он получил бы с таким подходом?</p>';
     } else {
-      probString += '<p>Отлично! You know your pills and your <i>phils</i>. How good it feels! *BA DUM TSS*</p>';
+      probString += '<p>Отлично! You know your pills and your <i>phils</i>.<br> ' +
+        'How good it feels! *BA DUM TSS*</p>';
     }
   }
 
